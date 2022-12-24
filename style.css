@@ -1,0 +1,372 @@
+:root {
+    --branco-principal: #ffffff;
+    --lilas-fundo: #EADDFE;
+    --lilas-claro:#EBDFFF;
+    --roxo-medio: #A16AFC;
+    --roxo-escuro: #430592;
+    --roxo-sombra: #4305924f ;
+    --titulos: 'Henny Penny', sans-serif;
+    --textos: 'Roboto', sans-serif;
+}
+
+/* Mobile first (max-width: 480px) */
+
+html {
+    background-color: var(--lilas-fundo);
+}
+
+header {
+    text-align: center;
+    font-size: 18px;
+    margin: -5px;
+}
+
+h1, h2, h3 {
+    font-family: var(--titulos);
+   
+}
+
+
+h2{
+    color: var(--branco-principal);
+    font-size: 30px;
+}
+
+h1, h3 {
+    color: var(--roxo-escuro);
+}
+
+h3 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.container{
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 380px;
+    height: 380px;
+    background-color: var(--roxo-medio);
+    border: 2px solid var(--roxo-sombra);
+    box-shadow: 2px 4px 10px var(--roxo-escuro);
+    border-radius: 10px;
+}
+
+.hmf {
+    margin-bottom: -5px;
+    margin-top: 40px;
+}
+
+.img-principal{
+    width: 350px;
+}
+
+.sublinhado-texto,
+.sublinhado-texto-2 {
+    width: 300px;
+    align-items: center;
+}
+
+.welcome {
+    margin-top: -5px;
+}
+
+.formulário {
+    background: var(--branco-principal);
+    width: 300px;
+    margin: auto;
+    border: 2px solid var(--roxo-sombra);
+    box-shadow: 2px 4px 10px var(--roxo-escuro);
+    border-radius: 10px;
+}
+
+label {
+    text-align: start;
+    color: var(--roxo-escuro);
+    font-weight: 500;
+    font-family: var(--textos);
+    font-size: 14px;
+    padding: 40px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 280px;
+    height: 25px;
+    margin: 5px;
+    margin-left: 30px;
+    background: #EBDFFF;
+    box-shadow: 1px 2px 8px var(--roxo-escuro);
+    border-radius: 10px;
+    border: none;
+}
+
+input::placeholder {
+    color: var(--roxo-escuro);
+    font-family: var(--textos);
+    font-size: 14px;
+}
+
+footer {
+    font-family: var(--textos);
+    font-size:medium;
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+    color: var(--roxo-escuro);
+}
+
+.text-box {
+    text-align: center;
+    font-family: var(--textos);
+    font-size: 10px;
+    margin-top: 0px;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .5s;
+    position:relative;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0,e 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: var(--roxo-medio);
+    color: var(--branco-principal);
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .8s;
+}
+
+.btn-white::after {
+    background-color: var(--roxo-medio);
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+  
+@media (min-width: 768px) and (max-width: 1280px){
+    header {
+        text-align: center;
+        font-size: 28px;
+    }
+       
+    h2{
+       font-size: 40px;
+    }
+    
+    h3 {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 35px;
+    }
+    
+    .container{
+        margin: auto;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        width: 700px;
+        height: 490px;
+    }
+    
+    .hmf {
+        margin-bottom: -5px;
+        margin-top: 30px;
+    }
+    
+    .img-principal{
+        width: 480px;
+    }
+    
+    .sublinhado-texto,
+    .sublinhado-texto-2 {
+        width: 400px;
+        align-items: center;
+    }
+   
+    .welcome {
+        margin-top: -5px;
+    }
+    
+    .formulário {
+        width: 680px;
+        height: 680px;
+    }
+    
+    label {
+        font-weight: 500;
+        font-size: 24px;
+    }
+    
+    input {
+        width: 580px;
+        height: 35px;
+    }
+    
+    input::placeholder {
+        font-size: 24px;
+    }
+
+    .text-box {
+        text-align: center;
+        font-family: var(--textos);
+        font-size: 20px;
+        margin-top: 0px;
+    }
+    
+    .btn:link,
+    .btn:visited {
+        padding: 15px 60px;
+        margin-top: 10px;
+    }
+    
+    footer {
+        font-size:larger;
+    }
+
+}
+
+@media (min-width: 1280px){
+    .prototipagem {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: end center;
+    }
+    
+    border{
+        margin: 0 auto;
+    }
+    
+    header {
+        text-align: center;
+        font-size: 28px;
+        margin: auto;
+    }
+    h1 {
+        margin-bottom: -90px;
+        margin-top: 20px;
+    }
+        
+    h2{
+        font-size: 40px;
+        
+    }
+    
+    h3 {
+        margin-top: 80px;
+        text-align: center;
+        font-size: 35px;
+    }
+    
+    .container{
+        width: 640px;
+        height: 710px;
+        grid-column: 1;
+        margin-top: 50px;
+    }
+    
+    .hmf {
+        margin-bottom: -5px;
+        margin-top: 50px;
+    }
+    
+    .img-principal{
+        margin-top: 50px;
+        margin-bottom: 40px;
+        width: 650px;
+    }
+    
+    .sublinhado-texto,
+    .sublinhado-texto-2 {
+        width: 400px;
+        align-items: center;
+    }
+    
+    .formulário {
+        align-items: center;
+        width: 640px;
+        height: 830px;
+        margin-bottom: 20px; 
+    }
+    
+    label  {
+        text-align: left;
+        font-weight: 500;
+        font-size: 24px;
+        margin-left: 50px;
+    }
+    
+    input {
+        width: 480px;
+        height: 35px;
+        margin-left: 70px;
+    }
+    
+    input::placeholder {
+        font-size: 24px;
+    }
+
+    .text-box {
+        text-align: center;
+        font-family: var(--textos);
+        font-size: 25px;
+        margin-top: 0px;
+    }
+    
+    .btn:link,
+    .btn:visited {
+        padding: 20px 70px;
+        margin-top: 50px;
+    }
+    
+    footer {
+        font-size:larger;
+        margin-top: -5px;
+    }
+}
+
