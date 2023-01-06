@@ -1,56 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-        <title>Form</title>
-    </head>
-    <body>
-        <div class="prototipagem">
-            <header>
-                <h1>*ASTRONAUTS*</h1> 
-            </header>
-            <section class="container">
-                <h2 class="hmf">HELLO MY FRIEND!</h2>
-                <img  src="img/Line.svg" alt="sublinhado do texto" class="sublinhado-texto">
-                <object class="img-principal" type="image/svg+xml" data="img/astronauts.svg" alt="dois astronautas e a lua no meio"></object>
-                <img src="img/Line.svg" alt="sublinhado do texto" class="sublinhado-texto-2">
-                <h2 class="welcome">WELCOME</h2>
-            </section>
 
-            <fieldset class="formulário">
-                <form>
-                    <h3>JOIN US</h3>
-                    <label>Name: <br/>  
-                    <input type="text" placeholder="    Enter your name" class="ph1">
-                    </label><br/><br/>
-                    <label>Username: <br/>
-                    <input type="text" placeholder="    Enter your username" class="ph1">
-                    </label><br/><br/>
-                    <label>Email:<br/>
-                    <input type="email" placeholder="   Enter a valid email address">
-                    </label><br/><br/>
-                    <label>Phone:<br/>
-                    <input type="text" placeholder="    Enter your phone ex.: +5511900000000">
-                    </label><br/><br/>
-                    <label>Address:<br/>
-                    <input type="text" placeholder="    Enter your username">
-                    </label><br/><br/>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>Form</title>
+</head>
 
-                    <div class="text-box">
-                        <a href="#" class="btn btn-white btn-animate">JOIN</a>
-                    </div>
-                </form>   
-            </fieldset>   
-        </div> 
-        <footer >
-            <p>Desenvolvido por Priscila Mariano</p>
-        </footer>
-    </body>
+<body>
+    <div class="prototipagem">
+        <header>
+            <h1>*ASTRONAUTS*</h1>
+        </header>
+        <section class="container">
+            <h2 class="hmf">HELLO MY FRIEND!</h2>
+            <img src="img/Line.svg" alt="sublinhado do texto" class="sublinhado-texto">
+            <object class="img-principal" type="image/svg+xml" data="img/astronauts.svg"
+                alt="dois astronautas e a lua no meio"></object>
+            <img src="img/Line.svg" alt="sublinhado do texto" class="sublinhado-texto-2">
+            <h2 class="welcome">WELCOME</h2>
+        </section>
+
+        <fieldset class="formulário">
+            <form>
+                <h3>JOIN US</h3>
+                <label>Name: <br />
+                    <input type="text" placeholder="    Enter your name" class="ph1"><br /><br /></label>
+
+                <label>Birthday: <br />
+                    <input type="date" class="ph1 ph2">
+                </label><br /><br />
+
+                <label>Email:<br />
+                    <input type="email" placeholder="   Enter a valid email address" class="ph1" required>
+                </label><br /><br />
+
+                <label>Username: <br />
+                    <input type="text" placeholder="    Enter your username" class="ph1" required>
+                </label><br /><br />
+
+                <label>Password:<br />
+                    <input type="password" placeholder="    Password (8 characters minimum):" minlength="8" class="ph1"
+                        required>
+                </label>
+
+                <p class="ph1">Estado</p>
+                <div class="div-select">
+                    <select name="estado" id="">
+                        <option value="SP">SP</option>
+                        <option value="MG">MG</option>
+                        <option value="RJ">RJ</option>
+                        <option value="TO">TO</option>
+                        <option value="RS">RS</option>
+                    </select>
+                </div>
+
+                <div class="teste">
+                    <p class="phs1">Gender: </p>
+                    <input type="radio" name="gender" value="male" class="phs">
+                    <label for="male" class="sex">Male
+                    </label></br>
+
+                    <input type="radio" name="gender" value="female" class="">
+                    <label for="female" class="sex">Female
+                    </label></br>
+
+                    <input type="radio" name="gender" value="non-binary" class="">
+                    <label for="non-binary" class="sex">Non Binary
+                    </label></br></br>
+
+                    <input type="checkbox" name="checkbox">
+                    <label for="titulo-agree" class="titulo-agree">I have read and agree to the terms of service</label>
+                </div>
+
+
+                <div class="text-box">
+                    <label><input type="reset" value="RESET">
+                    </label>
+                    <button type="submit">SUBMIT</button>
+                </div>
+
+    </div>
+    </form>
+    </fieldset>
+    </div>
+    <footer>
+        <p>Desenvolvido por Priscila Mariano</p>
+    </footer>
+</body>
+
 </html>
